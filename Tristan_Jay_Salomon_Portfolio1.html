@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tristan Jay Salomon — Senior Business Analyst and Consultant focused on banking systems and digital banking.">
+<title>Tristan Jay Salomon — Business meets technology</title>
+<style>
+:root{--ink:#182536;--muted:#657487;--navy:#10253c;--blue:#4c7ef3;--ice:#eaf0f8;--cream:#f6f3ec;--gold:#c7a66a;--white:#fff;--line:#e2e7ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.65;background:#fff}
+a{text-decoration:none;color:inherit}.wrap{width:min(1160px,90%);margin:auto}
+header{position:absolute;left:0;right:0;top:0;z-index:5;color:white}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.12em;font-size:.85rem}.brand span{color:#d9c18e}
+nav{display:flex;gap:27px;font-size:.88rem;color:#dbe4ef}nav a:hover{color:#e5c98f}
+.hero{min-height:680px;display:flex;align-items:center;position:relative;overflow:hidden;color:white;background:linear-gradient(112deg,#0c1d31 0%,#142e4b 58%,#234d70 100%)}
+.hero:before{content:"";position:absolute;width:650px;height:650px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-80px;top:70px;box-shadow:0 0 0 65px rgba(255,255,255,.025),0 0 0 130px rgba(255,255,255,.02)}
+.hero:after{content:"";position:absolute;width:280px;height:280px;border-radius:50%;right:130px;top:225px;background:radial-gradient(circle,rgba(199,166,106,.19),transparent 70%)}
+.hero-content{position:relative;z-index:1;padding:130px 0 80px;max-width:850px}
+.overline{font-size:.73rem;letter-spacing:.22em;text-transform:uppercase;color:#ddc58f;font-weight:800}
+h1{font-size:clamp(3rem,7vw,6rem);line-height:.99;letter-spacing:-.065em;margin:22px 0 25px;font-weight:750}
+.hero p{font-size:1.15rem;color:#d2dce8;max-width:650px;margin:0}
+.hero-bottom{display:flex;gap:15px;align-items:center;flex-wrap:wrap;margin-top:35px}.btn{padding:12px 19px;border-radius:4px;font-weight:700;font-size:.9rem}.btn-light{background:#fff;color:var(--navy)}.btn-quiet{border:1px solid #8194a9;color:white}
+.hero-caption{font-size:.8rem;color:#b6c4d3;letter-spacing:.04em}
+section{padding:100px 0}.intro-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:75px;align-items:start}
+.section-tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.2em;color:#5276b9;font-weight:800}
+h2{font-size:clamp(2.1rem,4.5vw,3.8rem);line-height:1.08;letter-spacing:-.055em;margin:14px 0 22px}
+.intro-copy{font-size:1.18rem;color:#536276;max-width:740px}.intro-copy strong{color:var(--ink)}
+.stamp{border-left:2px solid var(--gold);padding:7px 0 7px 20px;color:#6c7888;font-size:.92rem;margin-top:35px}
+.dark{background:var(--cream)}
+.headline-row{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:42px}.headline-row p{max-width:420px;color:var(--muted);margin:0}
+.focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.focus{padding:30px 28px;background:white;min-height:260px;border:1px solid #e9e4da;position:relative;overflow:hidden}
+.focus:after{content:attr(data-n);position:absolute;right:14px;bottom:-42px;font-size:8rem;font-weight:800;color:rgba(16,37,60,.045);line-height:1}
+.focus small{color:#5276b9;letter-spacing:.15em;font-weight:800}.focus h3{font-size:1.4rem;line-height:1.2;margin:25px 0 12px}.focus p{color:var(--muted);font-size:.94rem;max-width:300px}
+.approach{background:var(--navy);color:white}.approach .section-tag{color:#ddc58f}.approach .headline-row p{color:#c0cbd8}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #40536a;margin-top:45px}
+.step{padding:25px 22px 10px 0;border-right:1px solid #40536a}.step:not(:first-child){padding-left:22px}.step:last-child{border:0}
+.step b{font-size:.75rem;letter-spacing:.15em;color:#ddc58f}.step h3{font-size:1.25rem;margin:17px 0 8px}.step p{font-size:.9rem;color:#bdc9d7;margin:0}
+.projects{background:#fff}.project-list{display:grid;gap:16px;margin-top:38px}
+.project{display:grid;grid-template-columns:190px 1fr;gap:35px;padding:30px 0;border-top:1px solid var(--line)}
+.project-index{font-size:.78rem;letter-spacing:.15em;color:#5578b5;font-weight:800}.project h3{font-size:1.55rem;margin:0 0 9px}.project p{color:var(--muted);max-width:740px;margin:0}
+.project-labels{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.chip{font-size:.75rem;padding:5px 10px;border:1px solid #dce3eb;border-radius:30px;color:#516176}
+.perspective{background:#edf2f7}.perspective-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.quote{font-size:clamp(1.7rem,3.3vw,2.8rem);line-height:1.2;letter-spacing:-.04em;color:var(--navy)}.quote span{color:#5276b9}
+.perspective-copy{color:#5b6a7d}.background-line{margin-top:24px;padding-top:18px;border-top:1px solid #d4dce5;font-size:.9rem}
+.tools{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}.tool{padding:8px 13px;border-radius:3px;background:#f0f3f7;color:#536176;font-size:.84rem}
+.contact{background:#0b1d31;color:white;text-align:center}.contact .section-tag{color:#ddc58f}.contact h2{max-width:720px;margin:15px auto 20px}.contact p{color:#c1ccda;max-width:600px;margin:0 auto}.contact a{display:inline-block;margin-top:28px;background:white;color:var(--navy);padding:13px 22px;border-radius:4px;font-weight:800}
+footer{background:#071526;color:#8798ab;padding:20px;text-align:center;font-size:.78rem}
+@media(max-width:800px){.intro-grid,.perspective-grid{grid-template-columns:1fr;gap:30px}.focus-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step:nth-child(3){padding-left:0}.headline-row{display:block}.headline-row p{margin-top:15px}}
+@media(max-width:560px){.nav{height:auto;padding:18px 0;display:block}.nav nav{gap:14px;flex-wrap:wrap;margin-top:12px;font-size:.78rem}.hero{min-height:620px}.hero-content{padding-top:155px}.focus-grid,.steps{grid-template-columns:1fr}.step,.step:not(:first-child){padding:22px 0;border-right:0;border-bottom:1px solid #40536a}.project{grid-template-columns:1fr;gap:8px}section{padding:70px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top">TRISTAN JAY <span>SALOMON</span></a>
+<nav><a href="#about">My perspective</a><a href="#focus">What I focus on</a><a href="#approach">How I work</a><a href="#projects">Work themes</a><a href="#contact">Connect</a></nav>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-content">
+<div class="overline">Business analysis · Banking technology · Digital experiences</div>
+<h1>Making business complexity easier to move through.</h1>
+<p>I’m Tristan Jay Salomon — a Senior Business Analyst and Consultant working at the intersection of business needs, banking systems, and digital banking.</p>
+<div class="hero-bottom"><a class="btn btn-light" href="#focus">Explore my work</a><a class="btn btn-quiet" href="mailto:tristanjaysalomon@gmail.com">Start a conversation</a><span class="hero-caption">Metrobank · Philippines</span></div>
+</div></section>
+
+<section id="about"><div class="wrap intro-grid">
+<div><div class="section-tag">A little about how I think</div><div class="stamp">Curiosity first. Clarity always. Progress together.</div></div>
+<div><h2>Good solutions begin with understanding the real problem.</h2>
+<div class="intro-copy">I enjoy bringing structure to complex ideas — listening to different perspectives, asking the right questions, and helping turn business needs into clear direction for technology teams.</div>
+<div class="intro-copy">Today, my work is centered on <strong>banking systems and digital banking</strong>, including system implementation and enhancement initiatives at Metropolitan Bank &amp; Trust Company (Metrobank).</div>
+<div class="intro-copy">My path through business analysis, product ownership, technical support, and operations has shaped a practical, collaborative way of approaching problems. I bring an Industrial Engineering mindset: understand the process, see how the pieces connect, and look for ways to make the whole system work better.</div>
+</div></div></section>
+
+<section class="dark" id="focus"><div class="wrap">
+<div class="headline-row"><div><div class="section-tag">Where I focus</div><h2>Connecting the dots<br>between business and tech.</h2></div><p>My current domain is banking technology. These are the kinds of challenges and conversations that shape my work.</p></div>
+<div class="focus-grid">
+<article class="focus" data-n="01"><small>01 / DOMAIN</small><h3>Banking systems</h3><p>Understanding business needs and how banking systems support the processes behind them.</p></article>
+<article class="focus" data-n="02"><small>02 / EXPERIENCE</small><h3>Digital banking</h3><p>Thinking across business requirements, system capabilities, and digital service experiences.</p></article>
+<article class="focus" data-n="03"><small>03 / CHANGE</small><h3>System implementation</h3><p>Helping connect requirements, people, and delivery activities during system implementation.</p></article>
+<article class="focus" data-n="04"><small>04 / EVOLUTION</small><h3>System enhancement</h3><p>Supporting the evolution of existing systems as business needs and expectations develop.</p></article>
+<article class="focus" data-n="05"><small>05 / ALIGNMENT</small><h3>Business & technology</h3><p>Creating shared understanding between stakeholders and technical teams.</p></article>
+<article class="focus" data-n="06"><small>06 / IMPROVEMENT</small><h3>Process thinking</h3><p>Looking at workflows and requirements with an eye for clarity, usability, and improvement.</p></article>
+</div></div></section>
+
+<section class="approach" id="approach"><div class="wrap">
+<div class="headline-row"><div><div class="section-tag">My working approach</div><h2>From ambiguity<br>to shared direction.</h2></div><p>Every initiative is different, but I value a thoughtful process that keeps people, purpose, and delivery connected.</p></div>
+<div class="steps">
+<div class="step"><b>01 — DISCOVER</b><h3>Listen & understand</h3><p>Explore the business context, users, pain points, and desired outcomes.</p></div>
+<div class="step"><b>02 — TRANSLATE</b><h3>Make it clear</h3><p>Shape requirements, user stories, process flows, and acceptance criteria.</p></div>
+<div class="step"><b>03 — ALIGN</b><h3>Bring teams together</h3><p>Build shared understanding across business and technology stakeholders.</p></div>
+<div class="step"><b>04 — SUPPORT</b><h3>Move toward delivery</h3><p>Support implementation, validation, feedback, and continuous improvement.</p></div>
+</div></div></section>
+
+<section class="projects" id="projects"><div class="wrap">
+<div class="section-tag">Selected work themes</div><h2>Change that starts with<br>the right questions.</h2>
+<div class="project-list">
+<article class="project"><div class="project-index">WORK THEME / 01</div><div><h3>System implementation</h3><p>Working through the business side of system change: understanding requirements, clarifying expectations, documenting needs, and supporting coordination between stakeholders and delivery teams.</p><div class="project-labels"><span class="chip">Requirements</span><span class="chip">Stakeholder alignment</span><span class="chip">Implementation support</span></div></div></article>
+<article class="project"><div class="project-index">WORK THEME / 02</div><div><h3>System enhancement</h3><p>Contributing to improvement initiatives by examining business needs, articulating expected system behavior, and helping teams maintain alignment between requirements and proposed enhancements.</p><div class="project-labels"><span class="chip">Business analysis</span><span class="chip">Functional documentation</span><span class="chip">UAT support</span></div></div></article>
+<article class="project"><div class="project-index">WORK THEME / 03</div><div><h3>Product ownership & delivery</h3><p>Previously led backlog refinement and prioritization, translated requirements into user stories and acceptance criteria, and collaborated with cross-functional teams through Agile delivery activities.</p><div class="project-labels"><span class="chip">Product ownership</span><span class="chip">Agile</span><span class="chip">Backlog management</span></div></div></article>
+</div>
+<p style="color:#7b8795;font-size:.82rem;margin-top:25px">These are high-level descriptions of experience areas, not confidential project case studies. No proprietary banking, customer, or internal system details are disclosed.</p>
+</div></section>
+
+<section class="perspective"><div class="wrap perspective-grid">
+<div class="quote">“The best analysis doesn’t just document what is needed. It helps people <span>see the way forward.</span>”</div>
+<div><div class="section-tag">My professional perspective</div><h2>A broad foundation, one connected mindset.</h2><p class="perspective-copy">My experience spans business analysis, product ownership, customer and technical support, and production operations. Each role has strengthened a different part of how I work: understanding people, examining processes, communicating clearly, and helping teams solve problems.</p><div class="background-line"><strong>Education</strong><br>Bachelor of Science in Industrial Engineering<br>Lyceum of the Philippines University – Batangas</div><div class="tools"><span class="tool">Agile</span><span class="tool">Jira</span><span class="tool">Confluence</span><span class="tool">Power BI</span><span class="tool">Excel</span><span class="tool">Lark</span><span class="tool">Slack</span><span class="tool">Shortcut</span><span class="tool">JavaScript</span><span class="tool">HTML/CSS</span><span class="tool">Basic Python</span></div></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<div class="section-tag">Let's connect</div><h2>Have a business or technology challenge to explore?</h2><p>I welcome professional conversations around business analysis, banking technology, digital banking, and system delivery.</p><a href="mailto:tristanjaysalomon@gmail.com">Email Tristan</a>
+</div></section>
+</main>
+<footer>© 2026 Tristan Jay Salomon</footer>
+</body></html>
